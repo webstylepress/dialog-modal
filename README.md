@@ -1,1 +1,1 @@
-# dialog-modal
+# Dialog Modal
