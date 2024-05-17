@@ -1,0 +1,36 @@
+body {
+	font-size: 1.5rem;
+}
+
+dialog {
+	background: #000;
+	color: #fff;
+	font-weight: 400;
+	padding: 50px 40px 40px 40px;
+	border-radius: 6px;
+	border: 0;
+	max-width: 80%;
+	line-height: 1.4;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+}
+
+dialog.opened,
+dialog[open] {
+	opacity: 1;
+}
+
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-close {
+	position: absolute;
+	right: 6px;
+	top: 10px;
+	line-height: 1;
+}
